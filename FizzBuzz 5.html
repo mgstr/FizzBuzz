@@ -1,0 +1,26 @@
+<html>
+<head><title>FizzBuzz 5</title></head>
+<body>
+<h2>FizzBuzz 5</h2>
+<script>
+for (i=1; i<=100; i++)
+{
+	var a = i%5 == 0;
+	if (i%3)
+	{
+		if (a)
+			document.write("Buzz");
+		else
+			document.write(i);
+	}
+	else
+	{
+		document.write("Fizz");
+		if (a)
+			document.write("Buzz");
+	}
+	document.write("<br>");
+}
+</script>
+</body>
+</html>

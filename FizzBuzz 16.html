@@ -1,0 +1,28 @@
+<html>
+<head><title>FizzBuzz 16</title></head>
+<body>
+<h2>FizzBuzz 16</h2>
+<script>
+// 0100`1001`0010`0100
+var n3=0;
+// 0100`0010`0001`0000
+var n5=0;
+var n;
+var actions = [
+	function() { document.write(n); },
+	function() { document.write("Fizz"); },
+	function() { document.write("Buzz"); },
+	function() { actions[1](); actions[2](); }
+];
+for(n=1;n<=100;n++,n3>>=1,n5>>=1)
+{
+	if (!n3)
+		n3=0x4924;
+	if (!n5)
+		n5=0x4210;
+	actions[((n5 & 1) << 1) | (n3 & 1)]();
+	document.write("<br>");
+}
+</script>
+</body>
+</html>

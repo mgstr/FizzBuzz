@@ -1,0 +1,11 @@
+<html>
+<head><title>FizzBuzz 37</title></head>
+<body>
+<h2>FizzBuzz 37</h2>
+<script>
+for(n=1,f="Fizz",b="Buzz",a=[f+b,,,f,,b,f,,,f,b,,f];n<101;document.write((a[n%15]||n)+"<br>"),n++);
+for(n=1,a=[,"Fizz","Buzz",a[1]+a[2]];n<101;document.write((a[2*!(n%5)+!(n%3)]||n)+"<br>"),n++);
+for(n=1;n<101;document.write((n%15==0?"FizzBuzz":n%3==0?"Fizz":n%5==0?"Buzz":n)+"<br>"),++n);
+</script>
+</body>
+</html>

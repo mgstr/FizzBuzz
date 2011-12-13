@@ -1,0 +1,27 @@
+<html>
+<head><title>FizzBuzz 14</title></head>
+<body>
+<h2>FizzBuzz 14</h2>
+<script>
+var a = new Array(100);
+
+for(i=2;i<=99;i+=3)
+	a[i]="Fizz";
+
+for(i=4;i<=99;i+=5)
+	if (typeof a[i] == "undefined")
+		a[i] = "Buzz";
+	else
+		a[i] = "FizzBuzz";
+	
+for(i=0;i<100;++i)
+{
+	if (typeof a[i] == "undefined")
+		document.write(i+1);
+	else
+		document.write(a[i]);
+	document.write("<br>");
+}
+</script>
+</body>
+</html>

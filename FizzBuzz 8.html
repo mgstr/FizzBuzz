@@ -1,0 +1,30 @@
+<html>
+<head><title>FizzBuzz 9</title></head>
+<body>
+<h2>FizzBuzz 9</h2>
+<script>
+function a(){document.write("<br>")}
+function c(){document.write(++n);a()}
+function d(t){++n;document.write(t+"<br>")}
+function f(){d("Fizz")}
+function b(){d("Buzz")}
+function e(){c();c();f()}
+
+for(n=0;;)
+{
+e();
+c();
+b();
+f();
+e();
+b();
+if (n>99) break;
+c();
+f();
+c();
+c();
+d("FizzBuzz");
+}
+</script>
+</body>
+</html>

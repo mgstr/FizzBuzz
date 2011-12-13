@@ -1,0 +1,3 @@
+From time to time I am sitting on the job interviews. Our managers love to ask candidates to write a FizzBuzz program. And I am bored to look at straight and simple FizzBuzz programs written by candidates. So I decided to write some of my own versions of FizzBuzz programs that definitly are not production quality code but still a lot of fun to write.
+
+for(n=1,a=[,"Fizz","Buzz",a[1]+a[2]];n<101;document.write((a[2*!(n%5)+!(n%3)]||n)+"<br>"),n++);
